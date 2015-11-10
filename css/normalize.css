@@ -41,6 +41,7 @@ main,
 menu,
 nav,
 section,
+greyedtable,
 summary {
     display: block;
 }
@@ -133,14 +134,15 @@ dfn {
 
 h1 {
     font-size: 44px;
-    margin: 0.67em 0;
+    margin: 1em 0;
     text-align: center;
 }
 
 h2 {
     font-size: 24px;
-
-    margin-top: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
     text-align: center;
 }
 
@@ -427,7 +429,17 @@ optgroup {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    margin: 0 auto;
 }
+
+/* this is not used */
+.greyed {
+    background-color: #003333;
+    width: 200px;
+    height: 200px;
+    border: 0;
+}
+
 
 td,
 th {
