@@ -1,0 +1,15 @@
+.left{
+   float:left;
+    width:50%;
+    background: green;
+}
+
+.right{
+    float:right;
+    width: 50%;
+    background :purple;
+}
+
+#uniqueJorney{
+    display:none
+}

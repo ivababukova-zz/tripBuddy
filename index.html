@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <!-- Initial Template created from an amalgamation of HTML5 Boilerplate and the Bootstrap template. -->
-
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
@@ -9,47 +7,57 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href ="css/kriso.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script src = "js/events.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
+    your browser</a> to improve your experience.
+</p>
 <![endif]-->
-
 <!-- Add your site or application content here-->
 <div id="home" class="section">
     <div class="smallsection flexVerticalCellWrap">
         <div class="row">
             <h1>Trip Buddy</h1>
             <h3>Don't travel alone anymore!</h3>
-
         </div>
     </div>
-
     <table>
         <tr>
             <th><img src="pictures/cartravel.png" style="margin-top: 20px" height="85" width="130"></th>
             <th>
                 <table>
                     <tr>
-                        <th width="72"><h2></h2></th>
-                        <th width="72"><h2></h2></th>
-                        <th width="72"><h2></h2></th>
+                        <th width="72">
+                            <h2></h2>
+                        </th>
+                        <th width="72">
+                            <h2></h2>
+                        </th>
+                        <th width="72">
+                            <h2></h2>
+                        </th>
                     </tr>
                     <tr>
-                        <th height="85" width="75.2" bgcolor="#d3d3d3"><h2></h2></th>
-                        <th height="85" width="152.5" bgcolor="#d3d3d3"><h2>Start now:</h2></th>
-                        <th height="85" width="75.2" bgcolor="#d3d3d3"><h2></h2></th>
+                        <th height="85" width="75.2" bgcolor="#d3d3d3">
+                            <h2></h2>
+                        </th>
+                        <th height="85" width="152.5" bgcolor="#d3d3d3">
+                            <h2>Start now:</h2>
+                        </th>
+                        <th height="85" width="75.2" bgcolor="#d3d3d3">
+                            <h2></h2>
+                        </th>
                     </tr>
                 </table>
             </th>
@@ -60,14 +68,26 @@
             <th>
                 <table>
                     <tr>
-                        <th width="85" bgcolor="#d3d3d3"><h2></h2></th>
-                        <th width="85" bgcolor="#d3d3d3"><h2><button type="button" class="btn btn-lg btn-primary">Log in</button></h2></th>
-                        <th width="85" bgcolor="#d3d3d3"><h2></h2></th>
+                        <th width="85" bgcolor="#d3d3d3">
+                            <h2></h2>
+                        </th>
+                        <th width="85" bgcolor="#d3d3d3">
+                            <h2><button type="button" class="btn btn-lg btn-primary">Log in</button></h2>
+                        </th>
+                        <th width="85" bgcolor="#d3d3d3">
+                            <h2></h2>
+                        </th>
                     </tr>
                     <tr>
-                        <th width="85" bgcolor="#d3d3d3"><h2></h2></th>
-                        <th width="85" bgcolor="#d3d3d3"><h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2></th>
-                        <th width="85" bgcolor="#d3d3d3"><h2></h2></th>
+                        <th width="85" bgcolor="#d3d3d3">
+                            <h2></h2>
+                        </th>
+                        <th width="85" bgcolor="#d3d3d3">
+                            <h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2>
+                        </th>
+                        <th width="85" bgcolor="#d3d3d3">
+                            <h2></h2>
+                        </th>
                     </tr>
                 </table>
             </th>
@@ -75,36 +95,104 @@
         </tr>
     </table>
     <!--
-   <table>
-               <tr>
-                   <th><h2></h2></th>
-                   <th><h2>Don't travel alone anymore</h2></th>
-                   <th><h2></h2></th>
-               </tr>
-               <tr>
-                   <th><h3></h3></th>
-                   <th bgcolor="#d3d3d3"><h3>Get started now:</h3></th>
-                   <th><h3></h3></th>
-               </tr>
-               <tr>
-                   <th><h2></h2></th>
-                   <th bgcolor="#d3d3d3"><h2><button type="button" class="btn btn-lg btn-primary">Log in</button></h2></th>
-                   <th><h2></h2></th>
-               </tr>
-               <tr>
-                   <td><h2></h2></td>
-                    <td height="60" bgcolor="#d3d3d3"><h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2></td>
-                    <td height="160"><h2></h2></td>
-                </tr>
+       <table>
+                   <tr>
+                       <th><h2></h2></th>
+                       <th><h2>Don't travel alone anymore</h2></th>
+                       <th><h2></h2></th>
+                   </tr>
+                   <tr>
+                       <th><h3></h3></th>
+                       <th bgcolor="#d3d3d3"><h3>Get started now:</h3></th>
+                       <th><h3></h3></th>
+                   </tr>
+                   <tr>
+                       <th><h2></h2></th>
+                       <th bgcolor="#d3d3d3"><h2><button type="button" class="btn btn-lg btn-primary">Log in</button></h2></th>
+                       <th><h2></h2></th>
+                   </tr>
+                   <tr>
+                       <td><h2></h2></td>
+                        <td height="60" bgcolor="#d3d3d3"><h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2></td>
+                        <td height="160"><h2></h2></td>
+                    </tr>
 
-                <tr>
-                    <th><h2>Don't travel alone anymore</h2></th>
-                </tr>
-    </table>
-   -->
+                    <tr>
+                        <th><h2>Don't travel alone anymore</h2></th>
+                    </tr>
+        </table>-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="pictures/navbar/logo.jpg"/> </a>
+            </div>
 
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">My Trips </a></li>
+                        <li><a href="#">History of Trips</a></li>
+                        <li><a href="#">Account Settings </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        </nav>
+    <!-- Add the css in some css file! Find which one! -->
+    <div id="createTripHome" class=" row">
+        <h2 style="padding-top: 50px">Choose trip type!</h2>
+        <p> <button id="createCarTrip" class="button btn btn-lg btn-primary btn-block" style="margin: 0 auto; width:250px;">Car Trip </button></p>
+        <p><button id="createTaxiTrip" class="button btn btn-lg  btn-warning btn-block"style="margin: 0 auto; width:250px;">Taxi Trip</button></p>
+        <p><button id="createWalk" class="button btn btn-lg btn-danger btn-block"style="margin: 0 auto; width:250px;">Walk</button></p>
+    </div>
+    <div id="createCarTripPage" style="display:none;" class="row">
+
+        <div class="col-sm-5" style="background-color:lavender; margin-left: 150px"><form role="form">
+            <form role="form" >
+                <div class="btn-group" data-toggle="buttons" style="margin-top: 25px">
+                    <label class="btn btn-default">
+                        <input type="radio" id="shareCar" value="1" /> Sharing a car
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" id="lookForCar"  value="2" /> Looking for a car
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="usr">From : </label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">To: </label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="btn-group" data-toggle="buttons" >
+                    <label class="btn btn-default"><input type="radio" id="uniqueTrip" value="1" /> Unique Trip</label>
+                    <label class="btn btn-default"><input type="radio" id="WeeklyTrip"  value="2" /> Weekly Trip</label>
+                </div>
+            </form>
+
+
+        </div>
+
+
+<div class="col-sm-5" style="background-color:lavenderblush;"><p>Right Side</p></div>
 
 </div>
 
+</div>
 </body>
 </html>
