@@ -13,3 +13,15 @@
 #uniqueJorney{
     display:none
 }
+
+.tableCell{
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+.grayTable{
+    background-color: #d3d3d3;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 310px;
+}
