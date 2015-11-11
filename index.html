@@ -12,11 +12,19 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href ="css/kriso.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <script src = "js/events.js"></script>
     <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript">
+        function displayForm() {
+           console.log("jababab");
+        }
+
+    </script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -27,8 +35,8 @@
 <!-- Add your site or application content here-->
 <div id="home" class="section">
     
-    <div class="smallsection flexVerticalCellWrap">
-        <div class="row">
+    <div id= "sth" class="smallsection flexVerticalCellWrap">
+        <div id ="mainpage" class="row">
             <h1>Trip Buddy</h1>
             <h3>Don't travel alone anymore!</h3>
             <img src="pictures/cartravel.png" height="85" width="130" style="margin-left: 350px">
@@ -36,7 +44,7 @@
 
             <div class="row grayTable">
                 <div class="span3 tableCell"  style="margin-top: 30px"><h2>Start now:</h2></div>
-                <div class="span3 tableCell"><h2><button type="button" class="btn btn-lg btn-primary">Log in</button></h2></div>
+                <div class="span3 tableCell"><h2><button id="loginButton" type="button" class="btn btn-lg btn-primary">Log in</button></h2></div>
                 <div class="span3 tableCell" style="margin-bottom: 40px"><h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2>
             </div>
 
@@ -46,7 +54,7 @@
         </div>
     </div>
 
-
+<div id="navbar" style="display: none">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -77,8 +85,9 @@
             </ul>
         </div><!-- /.navbar-collapse -->
         </nav>
+    </div>
     <!-- Add the css in some css file! Find which one! -->
-    <div id="createTripHome" class=" row">
+    <div id="createTripHome" class=" row" style="display: none">
         <h2 style="padding-top: 50px">Choose trip type!</h2>
         <p> <button id="createCarTrip" class="button btn btn-lg btn-primary btn-block" style="margin: 0 auto; width:250px;">Car Trip </button></p>
         <p><button id="createTaxiTrip" class="button btn btn-lg  btn-warning btn-block"style="margin: 0 auto; width:250px;">Taxi Trip</button></p>
@@ -106,19 +115,22 @@
                     <input type="password" class="form-control" id="pwd">
                 </div>
                 <div class="btn-group" data-toggle="buttons" >
-                    <label class="btn btn-default"><input type="radio" id="uniqueTrip" value="1" /> Unique Trip</label>
-                    <label class="btn btn-default"><input type="radio" id="WeeklyTrip"  value="2" /> Weekly Trip</label>
+                    <label id ="uniqueTrip"class="btn btn-default"><input type="radio"  value="1" /> Unique Trip</label>
+                    <label id="weeklyTrip" class="btn btn-default" ><input type="radio" id="WeeklyTrip"  value="2" /> Weekly Trip</label>
                 </div>
             </form>
 
-
-        </div>
+            <div  class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: none">
+                <input size="16" type="text" value="12-02-2012" readonly>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+        </form></div>
 
 
 <div class="col-sm-5" style="background-color:lavenderblush;"><p>Right Side</p></div>
 
 </div>
-
+</div>
 </div>
 </body>
 </html>

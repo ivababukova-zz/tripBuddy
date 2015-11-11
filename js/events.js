@@ -9,11 +9,16 @@ $(document).ready(function(){
 }
     );
 
+    $("#loginButton").click(function(){
+        $("#createTripHome").show();
+        $("#navbar").show();
+        $("#mainpage").hide();
+    });
 
+    $('#datepicker').datepicker();
 
     $("#uniqueTrip").click(function(){
-        console.log("hello");
+        $("#datepicker").show();
         });
 
-})
-
+});
