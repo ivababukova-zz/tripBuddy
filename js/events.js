@@ -20,5 +20,9 @@ $(document).ready(function(){
     $("#uniqueTrip").click(function(){
         $("#datepicker").show();
         });
+    $(".sound").keypress(function(){
+        var audio = document.getElementById("audio");
+        audio.play();
+    })
 
 });
