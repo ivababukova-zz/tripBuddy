@@ -27,7 +27,7 @@
 
     </script>
 </head>
-<body>
+<body id="body">
 
     <audio id="audio" src="button2.mp3"></audio>
 <!--[if lt IE 8]>
@@ -38,34 +38,34 @@
 <!-- Add your site or application content here-->
 <div id="home" class="section">
 
-    <div id="sth" class="smallsection flexVerticalCellWrap" style="display: block">
+    <div id="sth" class="smallsection flexVerticalCellWrap">
         <div class="row">
             <div class="span3 tableCell" style="margin-right: 690px; height: 80px; margin-top: 40px"><a class="navbar-brand" href="#"><img src="pictures/navbar/logo.jpg"/> </a></div>
             <h3>Don't travel alone anymore!</h3>
             <div class="span3 tableCell"><img src="pictures/cartravel.png" height="85" width="130" style="margin-left: 350px"></div>
 
 
-            <div id="startPage" class="row grayTable" style="display: block">
+            <div id="startPage" class="row grayTable">
                 <div class="span3 tableCell" style="margin-top: 30px"><h2>Start now:</h2></div>
-                <div class="span3 tableCell"><h2><button id="loginButton" type="button" class="btn btn-lg btn-primary" onclick="hideElement('startPage')">Log in</button></h2></div>
+                <div class="span3 tableCell"><h2><button id="loginButton" type="button" class="btn btn-lg btn-primary" onclick="getLocalProfile()">Log in</button></h2></div>
                 <div class="span3 tableCell" style="margin-bottom: 40px"><h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2></div>
             </div>
 
-            <div id="loginPage" class = "row" style="display: none">
+            <div id="loginPage" class = "row">
                 <div class="container"  style="max-width: 300px">
                     <div class="card card-container">
                         <img id="profile-img" class="profile-img-card" src="pictures/avatar.png" style="max-height: 90px; max-width: 90px; margin: 0 auto;"/>
                         <p id="profile-name" class="profile-name-card"></p>
                         <form class="form-signin">
                             <span id="reauth-email" class="reauth-email"></span>
-                            <input type="email" id="inputEmail" class="form-control sound "  placeholder="Email address" required autofocus>
-                            <input type="password" id="inputPassword" class="form-control sound" placeholder="Password" required>
+                            <input type="email" id="inputEmail" class="form-control sound " placeholder="Email address" required autofocus>
+                            <input type="password" id="inputPassword" class="form-control sound" placeholder="Password" required autofocus>
                             <div id="remember" class="checkbox">
                                 <label>
                                     <input type="checkbox" value="remember-me"> Remember me
                                 </label>
                             </div>
-                            <button id="signInButton" class="btn btn-lg btn-primary btn-block btn-signin" onclick="getLocalProfile('loginPage')">Sign in</button>
+                            <button id="signInButton" class="btn btn-lg btn-primary btn-block btn-signin" onclick="login()">Sign in</button>
                         </form><!-- /form -->
                         <a href="#" class="forgot-password">
                             Forgot your password?
@@ -76,7 +76,7 @@
         </div>
     </div>
 
-<div id="navbar" style="display: none">
+<div id="navbar">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -106,7 +106,7 @@
     </nav>
 </div>
     <!-- Add the css in some css file! Find which one! -->
-    <div id="createTripHome" class=" row" style="display: none">
+    <div id="createTripHome" class=" row">
         <h2 style="padding-top: 50px">Choose trip type!</h2>
         <p> <button id="createCarTrip" class="button btn btn-lg btn-primary btn-block" style="margin: 0 auto; width:250px;">Car Trip </button></p>
         <p><button id="createTaxiTrip" class="button btn btn-lg  btn-warning btn-block" style="margin: 0 auto; width:250px;">Taxi Trip</button></p>
