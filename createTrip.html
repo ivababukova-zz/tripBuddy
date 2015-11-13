@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Initial Template created from an amalgamation of HTML5 Boilerplate and the Bootstrap template. -->
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src = "js/events.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+<div id="navbar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="pictures/navbar/logo.jpg"/> </a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">My Trips </a></li>
+                        <li><a href="#">History of Trips</a></li>
+                        <li><a href="#">Account Settings </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</div>
+
+<div id="createTripHome" class=" row">
+    <h2 style="padding-top: 50px">Choose trip type!</h2>
+    <p> <button id="createCarTrip" class="button btn btn-lg btn-primary btn-block createButton">Car Trip </button></p>
+    <p><button id="createTaxiTrip" class="button btn btn-lg  btn-warning btn-block createButton">Taxi Trip</button></p>
+    <p><button id="createWalk" class="button btn btn-lg btn-danger btn-block createButton ">Walk</button></p>
+</div>
+<div id="createCarTripPage" class="row" style="display:none">
+
+    <div class="col-sm-5" style="background-color:lavender; margin-left: 150px"><form role="form">
+        <form role="form" >
+            <div class="btn-group" data-toggle="buttons" style="margin-top: 25px">
+                <label class="btn btn-default">
+                    <input type="radio" id="shareCar" value="1" /> Sharing a car
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" id="lookForCar"  value="2" /> Looking for a car
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="usr">From : </label>
+                <input type="text" class="form-control sound " id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">To: </label>
+                <input type="password" class="form-control sound" id="pwd">
+            </div>
+            <div class="btn-group" data-toggle="buttons" >
+                <label id ="uniqueTrip" class="btn btn-default"><input type="radio"  value="1" /> Unique Trip</label>
+                <label id="weeklyTrip" class="btn btn-default" ><input type="radio" value="2" /> Weekly Trip</label>
+            </div>
+        </form>
+        <div class ="form-group">
+            <label for="usr">Date: </label>
+            <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: none">
+                <input size="16" type="text" value="12-02-2012" readonly>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+
+        </div>
+
+    </form></div>
+
+
+<div class="col-sm-5" style="background-color:lavenderblush;"><p>Right Side</p></div>
+</div>
+</body>

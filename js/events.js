@@ -9,20 +9,20 @@ $(document).ready(function(){
 }
     );
 
-    $("#loginButton").click(function(){
+  /*  $("#loginButton").click(function(){
         $("#createTripHome").show();
         $("#navbar").show();
         $("#mainpage").hide();
     });
-
+*/
     $('#datepicker').datepicker();
 
     $("#uniqueTrip").click(function(){
         $("#datepicker").show();
         });
-    $(".sound").keypress(function(){
-        var audio = document.getElementById("audio");
-        audio.play();
-    })
-
+    $(".sound").keypress(function() {
+        var sound = new Audio("sounds/button2.mp3");
+        sound.currentTime = 0;
+        sound.play();
+    });
 });

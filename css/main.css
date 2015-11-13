@@ -53,3 +53,11 @@ h3 {
     margin-right: 20px;
     text-align: center;
 }
+
+/**
+* style for buttons on create trip page
+*/
+.createButton{
+    margin: 0 auto;
+    width:250px;
+}

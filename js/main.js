@@ -15,8 +15,8 @@ function preload(){
     console.log("in preload func");
     $("#startPage").css({"display": 'block'});
     $("#loginPage").css({"display": 'none'});
-    $("#navbar").css({"display": 'none'});
-    $("#createTripHome").css({"display": 'none'});
+//    $("#navbar").css({"display": 'none'});
+//    $("#createTripHome").css({"display": 'none'});
     $('#body').css({"onload": 'foo()'});
     kupa.kupa = "kupa";
   }
@@ -30,8 +30,8 @@ function getLocalProfile(){
 
   $("#startPage").css({"display":'none'});
   $("#loginPage").css({"display":'block'});
-  $("#navbar").css({"display":'block'});
-  $("#createTripHome").css({"display":'block'});
+//  $("#navbar").css({"display":'block'});
+//  $("#createTripHome").css({"display":'block'});
 
 }
 
@@ -40,8 +40,8 @@ function login(){
   console.log("*****");
   $("#sth").css({"display":'none'});
   $("#loginPage").css({"display":'none'});
-  $("#navbar").css({"display":'block'});
-  $("#createTripHome").css({"display":'block'});
+//  $("#navbar").css({"display":'block'});
+//  $("#createTripHome").css({"display":'block'});
   isLoggedIn = true;
 }
 

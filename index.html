@@ -29,7 +29,6 @@
 </head>
 <body id="body">
 
-    <audio id="audio" src="button2.mp3"></audio>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.
@@ -76,77 +75,8 @@
         </div>
     </div>
 
-<div id="navbar">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="pictures/navbar/logo.jpg"/> </a>
-            </div>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">My Trips </a></li>
-                        <li><a href="#">History of Trips</a></li>
-                        <li><a href="#">Account Settings </a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Log Out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
-</div>
-    <!-- Add the css in some css file! Find which one! -->
-    <div id="createTripHome" class=" row">
-        <h2 style="padding-top: 50px">Choose trip type!</h2>
-        <p> <button id="createCarTrip" class="button btn btn-lg btn-primary btn-block" style="margin: 0 auto; width:250px;">Car Trip </button></p>
-        <p><button id="createTaxiTrip" class="button btn btn-lg  btn-warning btn-block" style="margin: 0 auto; width:250px;">Taxi Trip</button></p>
-        <p><button id="createWalk" class="button btn btn-lg btn-danger btn-block" style="margin: 0 auto; width:250px;">Walk</button></p>
-    </div>
-    <div id="createCarTripPage" style="display:none;" class="row">
 
-        <div class="col-sm-5" style="background-color:lavender; margin-left: 150px"><form role="form">
-            <form role="form" >
-                <div class="btn-group" data-toggle="buttons" style="margin-top: 25px">
-                    <label class="btn btn-default">
-                        <input type="radio" id="shareCar" value="1" /> Sharing a car
-                    </label>
-                    <label class="btn btn-default">
-                        <input type="radio" id="lookForCar"  value="2" /> Looking for a car
-                    </label>
-                </div>
-
-                <div class="form-group">
-                    <label for="usr">From : </label>
-                    <input type="text" class="form-control sound " id="usr">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">To: </label>
-                    <input type="password" class="form-control sound" id="pwd">
-                </div>
-                <div class="btn-group" data-toggle="buttons" >
-                    <label id ="uniqueTrip" class="btn btn-default"><input type="radio"  value="1" /> Unique Trip</label>
-                    <label id="weeklyTrip" class="btn btn-default" ><input type="radio" value="2" /> Weekly Trip</label>
-                </div>
-            </form>
-
-            <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: none">
-                <input size="16" type="text" value="12-02-2012" readonly>
-                <span class="add-on"><i class="icon-th"></i></span>
-            </div>
-        </form></div>
-    </div>
-
-<div class="col-sm-5" style="background-color:lavenderblush;"><p>Right Side</p></div>
 
 </div>
 </body>
