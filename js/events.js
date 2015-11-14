@@ -18,8 +18,20 @@ $(document).ready(function(){
     $('#datepicker').datepicker();
 
     $("#uniqueTrip").click(function(){
+        $("#dateAndTime").show();
         $("#datepicker").show();
+        $("#weekDays").hide()
         });
+
+    $("#weeklyTrip").click(function(){
+        $("#dateAndTime").hide();
+        $("#weekDays").show();
+    });
+
+    $('#datetimepicker2').datepicker({
+        pickDate: false
+    });
+
     $(".sound").keypress(function() {
         var sound = new Audio("sounds/button2.mp3");
         sound.currentTime = 0;

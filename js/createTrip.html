@@ -8,17 +8,23 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+   <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/datepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src = "js/events.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="bootstrap.js"></script>
+    <script src="main.js"></script>
+    <script src="bootstrap-datepicker.js"></script>
+    <script src = "bootstrap-datetimepicker.min.js"></script>
+    <script src = "events.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src = "moment.js"></script>
+
 
 
 </head>
@@ -35,12 +41,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="pictures/navbar/logo.jpg"/> </a>
+                <a class="navbar-brand" href="#"><img src="../pictures/navbar/logo.jpg"/> </a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">My Trips </a></li>
                         <li><a href="#">History of Trips</a></li>
@@ -73,7 +79,7 @@
                 </label>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style=" margin-top:25px">
                 <label for="usr">From : </label>
                 <input type="text" class="form-control sound " id="usr">
             </div>
@@ -86,16 +92,28 @@
                 <label id="weeklyTrip" class="btn btn-default" ><input type="radio" value="2" /> Weekly Trip</label>
             </div>
         </form>
-        <div class ="form-group">
+        <div  id="dateAndTime" class ="form-group" style = "margin-top: 25px; display:none">
             <label for="usr">Date: </label>
             <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: none">
                 <input size="16" type="text" value="12-02-2012" readonly>
                 <span class="add-on"><i class="icon-th"></i></span>
             </div>
+            </div>
 
-        </div>
 
-    </form></div>
+        <div id="weekDays">
+        <label for="usr">Days: </label>
+        <form role="form">
+            <label class="checkbox-inline"><input type="checkbox" value="">Monday</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Tuesday</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Wednesday</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Thursday</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Friday</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Saturday</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Sunday</label>
+        </form>
+    </div>
+    </div>
 
 
 <div class="col-sm-5" style="background-color:lavenderblush;"><p>Right Side</p></div>

@@ -3,6 +3,7 @@
  */
 var kupa = {};
 
+
 $( document ).ready(function() {
     preload();
 });

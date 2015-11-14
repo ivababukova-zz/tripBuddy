@@ -61,3 +61,8 @@ h3 {
     margin: 0 auto;
     width:250px;
 }
+
+#weekDays{
+    display:none;
+    margin-top: 25px;
+}
