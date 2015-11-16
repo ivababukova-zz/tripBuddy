@@ -20,10 +20,18 @@
 }
 
 .grayTable{
-    background-color: gray;
+    background-color: #6a7171;
     margin: 0 auto;
     margin-bottom: 40px;
     max-width: 310px;
+}
+
+.lightGrayTable{
+    background-color: #736F6E;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 300px;
 }
 
 /**
@@ -33,24 +41,28 @@
 
 h1 {
     font-size: 44px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 
 h2 {
     font-size: 24px;
-    margin-left: 20px;
     margin-bottom: 20px;
-    margin-right: 20px;
     text-align: center;
 }
 
 h3 {
     font-size: 18px;
     font-weight: normal;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
+}
+
+h4{
+    font-size: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -58,11 +70,73 @@ h3 {
 * style for buttons on create trip page
 */
 .createButton{
-    margin: 0 auto;
-    width:250px;
+    background-color: #ADDFFF;
+    width: 170px;
+    max-height: 45px;
+    margin-top: 15px;
+}
+
+.createButton:hover{
+    background-color: #307D7E;
 }
 
 #weekDays{
     display:none;
     margin-top: 25px;
+}
+
+.viewTripsButton {
+    background-color: lightpink;
+    width: 170px;
+    max-height: 45px;
+    margin-top: 15px;
+}
+
+.viewTripsButton:hover{
+    background-color: lightcoral;
+}
+
+.carButton {
+    background-color: #ADDFFF;
+    width: 130px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.carButton:hover{
+    background-color: #307D7E;
+}
+
+.taxiButton {
+    background-color: cadetblue;
+    width: 130px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.taxiButton:hover{
+    background-color: #151B54;
+}
+
+.walkButton {
+    background-color: lightgreen;
+    width: 130px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.walkButton:hover{
+    background-color: #347235;
+}
+
+.alltripsButton {
+    background-color: #f5e79e;
+    width: 130px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.alltripsButton:hover{
+    background-color: lightcoral;
 }
