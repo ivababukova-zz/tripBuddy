@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/datepicker.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src = "js/events.js"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -43,35 +42,12 @@
             <h3>Don't travel alone anymore!</h3>
             <div class="span3 tableCell"><img src="pictures/cartravel.png" height="85" width="130" style="margin-left: 350px"></div>
 
-
-            <div id="startPage" class="row grayTable">
+            <div id="startPage" class="row grayTable" style="display: block">
                 <div class="span3 tableCell" style="margin-top: 30px"><h2>Start now:</h2></div>
-                <div class="span3 tableCell"><h2><button id="loginButton" type="button" class="btn btn-lg btn-primary" onclick="getLocalProfile()">Log in</button></h2></div>
+                <div class="span3 tableCell"><h2><button id="loginButton" type="button" class="btn btn-lg btn-primary" onclick="window.location.href='login.html'">Log in</button></h2></div>
                 <div class="span3 tableCell" style="margin-bottom: 40px"><h2><button type="button" class="btn btn-lg btn-warning">Sign up</button></h2></div>
             </div>
 
-            <div id="loginPage" class = "row">
-                <div class="container"  style="max-width: 300px">
-                    <div class="card card-container">
-                        <img id="profile-img" class="profile-img-card" src="pictures/avatar.png" style="max-height: 90px; max-width: 90px; margin: 0 auto;"/>
-                        <p id="profile-name" class="profile-name-card"></p>
-                        <form class="form-signin">
-                            <span id="reauth-email" class="reauth-email"></span>
-                            <input type="email" id="inputEmail" class="form-control sound " placeholder="Email address" required autofocus>
-                            <input type="password" id="inputPassword" class="form-control sound" placeholder="Password" required autofocus>
-                            <div id="remember" class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="remember-me"> Remember me
-                                </label>
-                            </div>
-                            <button id="signInButton" class="btn btn-lg btn-primary btn-block btn-signin" onclick="login()">Sign in</button>
-                        </form><!-- /form -->
-                        <a href="#" class="forgot-password">
-                            Forgot your password?
-                        </a>
-                    </div><!-- /card-container -->
-                </div><!-- /container -->
-            </div>
         </div>
     </div>
 

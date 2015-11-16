@@ -1,12 +1,6 @@
 /**
  * Created by iva on 11/11/15.
  */
-var kupa = {};
-
-
-$( document ).ready(function() {
-    preload();
-});
 
 
 function preload(){
