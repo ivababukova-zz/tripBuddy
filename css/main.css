@@ -42,6 +42,11 @@
     height: 200px;
 }
 */
+
+.grayTableCell:hover{
+    background-color: #F5F5F5;
+}
+
 .cell{
     display: table-cell;
 }
@@ -56,10 +61,11 @@
 .currentTripsTable{
     background-color: #9E9E9C;
     margin: 0 auto;
-    width: 510px;
+    width: 490px;
     height: 250px;
     display: table;
-    margin-right: 700px;
+    margin-right: 70px;
+    margin-left: 200px;
     border-collapse: separate;
     border-spacing: 15px;
     padding-left: 15px;
@@ -111,7 +117,7 @@ h4{
 h5{
     margin-bottom: 30px;
     text-align: left;
-    margin-left: 190px;
+    margin-left: 200px;
     font-size: 24px;
     margin-top: 50px;
 }
@@ -197,4 +203,18 @@ h6 {
 
 .alltripsButton:hover{
     background-color: lightcoral;
+}
+
+.alltripsSmallButton {
+    background-color: #FFF550;
+    width: 70px;
+    height: 20px;
+    margin: 15px;
+    font-size: 11px;
+    text-align: center;
+    padding: 5px;
+}
+
+.alltripsSmallButton:hover{
+    background-color: #FFAF0A;
 }
