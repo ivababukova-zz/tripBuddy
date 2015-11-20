@@ -3,6 +3,12 @@
  */
 
 
+
+$("#clickable").click(function() {
+  console.log("I was clicked");
+  alert('Table cell has been clicked');
+});
+
 function preload(){
   console.log(kupa.kupa);
 

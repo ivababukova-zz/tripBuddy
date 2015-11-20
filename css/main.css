@@ -14,16 +14,58 @@
     display:none
 }
 
+#row  {
+    display: table-row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .tableCell{
     margin: 0 auto;
     max-width: 150px;
 }
 
+.grayTableCell{
+    background-color: #E5E4E2;
+    width: 100px;
+    height: 100px;
+}
+/* this is the way to change size of the table and show more content on hover
+
+.grayTableCellProperties{
+    visibility: hidden;
+}
+.grayTableCell:hover{
+    background-color: #347235;
+    visibility: visible;
+    width: 200px;
+    height: 200px;
+}
+*/
+.cell{
+    display: table-cell;
+}
+
 .grayTable{
     background-color: #6a7171;
     margin: 0 auto;
-    margin-bottom: 40px;
     max-width: 310px;
+    display: table;
+}
+
+.currentTripsTable{
+    background-color: #9E9E9C;
+    margin: 0 auto;
+    width: 510px;
+    height: 250px;
+    display: table;
+    margin-right: 700px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .lightGrayTable{
@@ -64,6 +106,22 @@ h4{
     font-size: 30px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+h5{
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 190px;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+h6 {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
 /**
