@@ -16,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
-    <script src = "js/events.js"></script>
+    <script src = "js/currentTripsEvents.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
@@ -67,46 +67,21 @@
                 </nav>
             </div>
             <h5>Current Trips in your area:</h5>
-            <div class="table">
-                <div class="row">
-                    <div class="btn-group dropdownButton">
-                        <button type="button" class="btn dropdown-toggle filterButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Filter <span class="caret" style="margin-left: 10px"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-filter">
-                            <li class="dropdown-line">
-                                <label>
-                                    <input type="checkbox" class="checkbox-cell">
-                                        show car trips
-                                </label>
-                            </li>
-                            <li class="dropdown-line">
-                                <label>
-                                    <input type="checkbox" class="checkbox-cell">
-                                    show taxi trips
-                                </label>
-                            </li>
-                            <li class="dropdown-line">
-                                <label>
-                                    <input type="checkbox" class="checkbox-cell">
-                                    show walk trips
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="table" style="text-align: center">
+                <div class="row" style=" margin-top: 20px">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label id ="carTrips" class="btn btn-default"><input type="radio"  value="1" />car</label>
+                            <label id ="taxiTrips" class="btn btn-default" ><input type="radio" value="2" />taxi</label>
+                            <label id ="walkTrips" class="btn btn-default" ><input type="radio" value="2" />walk</label>
+                            <label id ="allTrips" class="btn btn-default" ><input type="radio" value="2" />all trips</label>
+                        </div>
                 </div>
                 <div class="row">
-                    <div id="currentTripsColumn1" class="currentTripsTable" style="display: block;">
-                        <div class="row">
+                    <div class="currentTripsTable" style="display: block;">
+                        <div id="cars" class="row">
                             <div class="grayTableCell cell carTrips">
                                 <h6>Share car, Glasgow Uni, £4</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='shareCarMoreInfo.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell taxiTrips">
-                                <h6>Taxi tomorrow, GCU, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
                             </div>
@@ -116,16 +91,22 @@
                                     more info
                                 </button>
                             </div>
-                            <div class="grayTableCell cell walkTrips">
-                                <h6>Walk to work, Waterloo street</h6>
+                            <div class="grayTableCell cell carTrips">
+                                <h6>Share car, Glasgow Uni, £5</h6>
+                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
+                                    more info
+                                </button>
+                            </div>
+                            <div class="grayTableCell cell carTrips">
+                                <h6>Share car, 108 Argyle Street, £4</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Share car, 108 Argyle Street, £4</h6>
+                        <div id="taxis" class="row">
+                            <div class="grayTableCell cell taxiTrips">
+                                <h6>Taxi tomorrow, GCU, £8</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
@@ -136,8 +117,22 @@
                                     more info
                                 </button>
                             </div>
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Trip to Hyndlands, £18</h6>
+                            <div class="grayTableCell cell taxiTrips">
+                                <h6>Taxi tomorrow, GCU, £8</h6>
+                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
+                                    more info
+                                </button>
+                            </div>
+                        </div>
+                        <div id="walks" class="row">
+                            <div class="grayTableCell cell walkTrips">
+                                <h6>Walk to work, Waterloo street</h6>
+                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
+                                    more info
+                                </button>
+                            </div>
+                            <div class="grayTableCell cell walkTrips">
+                                <h6>Walk to work, Sauchihall street</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
@@ -149,7 +144,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="row">
+                        <div id="row4" class="row">
                             <div class="grayTableCell cell carTrips">
                                 <h6>Share car, Glasgow Uni, £4</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
@@ -175,52 +170,26 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="grayTableCell cell carTrips">
+                        <div id="row5" class="row">
+                            <div class="grayTableCell cell carTrips" id="car2">
                                 <h6>Share car, Glasgow Uni, £4</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
                             </div>
-                            <div class="grayTableCell cell taxiTrips">
+                            <div class="grayTableCell cell taxiTrips" id="taxi2">
                                 <h6>Taxi tomorrow, GCU, £8</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
                             </div>
-                            <div class="grayTableCell cell carTrips">
+                            <div class="grayTableCell cell carTrips" id="car3">
                                 <h6>Trip to Hyndlands, £18</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
                                 </button>
                             </div>
-                            <div class="grayTableCell cell walkTrips">
-                                <h6>Walk to work, Waterloo street</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Share car, Glasgow Uni, £4</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell taxiTrips">
-                                <h6>Taxi tomorrow, GCU, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Trip to Hyndlands, £18</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell walkTrips">
+                            <div class="grayTableCell cell walkTrips" id="walk2">
                                 <h6>Walk to work, Waterloo street</h6>
                                 <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
                                     more info
