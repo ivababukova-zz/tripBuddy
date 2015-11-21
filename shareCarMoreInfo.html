@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="css/main.css">
     <title></title>
 </head>
-<body>
+<body style="background-color: #F0FFFF">
 
 <div id="home" class="section">
 
-    <div id="sth" class="smallsection flexVerticalCellWrap">
+    <div id="sth" class="smallsection flexVerticalCellWrap" >
         <div class="row">
             <div id="navbar">
                 <nav class="navbar navbar-default">
@@ -56,10 +56,34 @@
                 </nav>
             </div>
         </div>
-        <div class="table">
-            <h5>todo</h5>
-
-
+        <h5>More info about this trip:</h5>
+        <div class="table currentTripsTable" style="width: 600px; height: 380px;">
+            <div class="centeredRow">
+                <div class="cell biggerGrayTableCell">
+                    <h6 style="text-align: left; font-size: 14px"><b>From:</b> 276 Paisley road</h6>
+                    <h6 style="text-align: left; font-size: 14px"><b>To:</b> University of Glasgow Library</h6>
+                    <h6 style="text-align: left; font-size: 14px"><b>Car Model:</b> Nissan X-Trail</h6>
+                    <h6 style="text-align: left; font-size: 14px"><b>Price:</b> £4</h6>
+                </div>
+                <div class="cell biggerGrayTableCell">
+                    <h6 style="text-align: left; font-size: 14px"><b>Picture of the car:</b></h6>
+                    <img src="pictures/xtrail.png" height="120" width="160">
+                </div>
+            </div>
+            <div class="centeredRow">
+                <div class="cell biggerGrayTableCell">
+                    <img src="pictures/map.jpg" style="width: 150px; height: 120px;">
+                    <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='shareCarMoreInfo.html'">
+                        more info
+                    </button>
+                </div>
+                <div class="cell biggerGrayTableCell">
+                    <h6 style="text-align: left; font-size: 14px"><b>Days:</b> Monday - Friday</h6>
+                    <h6 style="text-align: left; font-size: 14px"><b>Time:</b> 9-10 am</h6>
+                    <h6 style="text-align: left; font-size: 14px"><b>Seats left:</b> 2</h6>
+                    <h6 style="text-align: left; font-size: 14px"><b>Trip duration:</b> 15 min</h6>
+                </div>
+            </div>
         </div>
     </div>
 </div>

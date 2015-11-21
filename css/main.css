@@ -20,6 +20,11 @@
     margin-right: 10px;
 }
 
+.centeredRow{
+    margin: 0 auto;
+    display: table-row;
+}
+
 .tableCell{
     margin: 0 auto;
     max-width: 150px;
@@ -30,20 +35,19 @@
     width: 100px;
     height: 100px;
 }
-/* this is the way to change size of the table and show more content on hover
-
-.grayTableCellProperties{
-    visibility: hidden;
-}
-.grayTableCell:hover{
-    background-color: #347235;
-    visibility: visible;
-    width: 200px;
-    height: 200px;
-}
-*/
 
 .grayTableCell:hover{
+    background-color: #F5F5F5;
+}
+
+.biggerGrayTableCell{
+    background-color: #EBEBEB;
+    max-height: 120px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.biggerGrayTableCell:hover{
     background-color: #F5F5F5;
 }
 
@@ -62,9 +66,9 @@
     background-color: #9E9E9C;
     margin: 0 auto;
     width: 490px;
-    height: 290px;
+    height: 270px;
     display: table;
-    margin-top: 50px;
+    margin-top: 30px;
     border-collapse: separate;
     border-spacing: 15px;
     padding-left: 15px;
@@ -74,7 +78,7 @@
 }
 
 .lightGrayTable{
-    background-color: #736F6E;
+    background-color: #9E9E9C;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -116,8 +120,8 @@ h4{
 h5{
     text-align: center;
     font-size: 24px;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 h6 {
@@ -158,6 +162,14 @@ h6 {
 }
 
 .viewTripsButton:hover{
+    background-color: lightcoral;
+}
+
+.pinkButton{
+    background-color: lightpink;
+}
+
+.pinkButton:hover{
     background-color: lightcoral;
 }
 
@@ -224,19 +236,6 @@ h6 {
     margin-left: 200px;
     margin-bottom: 15px;
     margin-top: 20px;
-}
-
-/* styles which are for hiding elements from the currentTrips page */
-.carTrips{
-
-}
-
-.taxiTrips{
-
-}
-
-.walkTrips{
-
 }
 
 .checkbox-cell{
