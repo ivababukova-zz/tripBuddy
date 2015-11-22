@@ -258,3 +258,10 @@ h6 {
     font-size: 12px;
     background-color: #E5F2F2;
 }
+
+/* scrollable drop down*/
+.scrollable-menu {
+    height: auto;
+    max-height: 100px;
+    overflow-x: hidden;
+}

@@ -21,9 +21,11 @@
     <script src="main.js"></script>
     <script src="bootstrap-datepicker.js"></script>
     <script src = "bootstrap-datetimepicker.min.js"></script>
-    <script src = "events.js"></script>
+   <!-- <script src = "events.js"></script>-->
+    <script src = "createTrip.js"></script>
+
     <link rel="stylesheet" href="../css/main.css">
-    <script src = "moment.js"></script>
+
 
 
 
@@ -94,11 +96,29 @@
         </form>
         <div  id="dateAndTime" class ="form-group" style = "margin-top: 25px; display:none">
             <label for="usr">Date: </label>
-            <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: none">
+            <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: inline-block">
                 <input size="16" type="text" value="12-02-2012" readonly>
                 <span class="add-on"><i class="icon-th"></i></span>
             </div>
+            <div class="btn-group">
+                <button class="btn btn-default  dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:50px;margin-right:50px;display: inline-block">
+                  <span id="timeDropDown" style="width: 50px" >Time</span> <span class="caret"></span>
+                </button>
+                <ul id="timeOptions" class="dropdown-menu scrollable-menu">
+                    ...
+                </ul>
             </div>
+            <div class="btn-group">
+                <button class="btn btn-default  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:50px;margin-right:50px;display: inline-block">
+                    Large button <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    ...
+                </ul>
+            </div>
+            </div>
+
+
 
 
         <div id="weekDays">
@@ -113,6 +133,14 @@
             <label class="checkbox-inline"><input type="checkbox" value="">Sunday</label>
         </form>
     </div>
+        <div class="form-group" style=" margin-top:10px">
+            <label for="usr"> Car Model </label>
+            <input type="text" class="form-control sound " id="carModel">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Additional Information </label>
+            <input type="password" class="form-control sound" id="aditionalInfo">
+        </div>
     </div>
 
 
