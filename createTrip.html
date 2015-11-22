@@ -8,30 +8,30 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="../css/normalize.css">
-   <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
 
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/datepicker.css">
-    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="bootstrap.js"></script>
-    <script src="main.js"></script>
-    <script src="bootstrap-datepicker.js"></script>
-    <script src = "bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src = "js/bootstrap-datetimepicker.min.js"></script>
    <!-- <script src = "events.js"></script>-->
-    <script src = "createTrip.js"></script>
+    <script src = "js/createTrip.js"></script>
 
-    <link rel="stylesheet" href="../css/main.css">
-
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 
 
 </head>
 
-<body>
+<body style="background:rgb(240, 248, 255)">
 <div id="navbar">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -43,18 +43,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="../pictures/navbar/transparentLogo.gif"/> </a>
+                <a class="navbar-brand" href="#"><img src="pictures/navbar/transparentLogo.gif"/> </a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">My Trips </a></li>
                         <li><a href="#">History of Trips</a></li>
                         <li><a href="#">Account Settings </a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="../index.html">Log Out</a></li>
+                        <li><a href="index.html">Log Out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -70,7 +70,7 @@
 </div>
 <div id="createCarTripPage" class="row" style="display:none">
 
-    <div class="col-sm-5" style="background-color:lavender; margin-left: 150px"><form role="form">
+    <div class="col-sm-5" style=" margin-left: 150px;height:550px"><form role="form">
         <form role="form" >
             <div class="btn-group" data-toggle="buttons" style="margin-top: 25px">
                 <label class="btn btn-default">
@@ -105,15 +105,14 @@
                   <span id="timeDropDown" style="width: 50px" >Time</span> <span class="caret"></span>
                 </button>
                 <ul id="timeOptions" class="dropdown-menu scrollable-menu">
-                    ...
                 </ul>
             </div>
             <div class="btn-group">
                 <button class="btn btn-default  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:50px;margin-right:50px;display: inline-block">
-                    Large button <span class="caret"></span>
+                    <span id="seats">Free Seats</span><span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu">
-                    ...
+                <ul class="dropdown-menu scrollable-menu" id="freeSeats">
+
                 </ul>
             </div>
             </div>
@@ -144,6 +143,16 @@
     </div>
 
 
-<div class="col-sm-5" style="background-color:lavenderblush;"><p>Right Side</p></div>
+<div class="col-sm-5" style=" height:550px;"><p>Right Side</p>
+    <div id="googleMap" style="width:500px;height:380px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+"></div>
+    <div class="btn-group" data-toggle="buttons" style="margin-top: 50px; margin-right:100px; float:right">
+        <button id="createCar2Trip" class="button btn btn-default btn-lg">Submit trip </button></p>
+        </label>
+
+</div>
 </div>
 </body>
