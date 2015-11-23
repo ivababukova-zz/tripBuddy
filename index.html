@@ -26,7 +26,7 @@
 
     </script>
 </head>
-<body id="body" style="background-color: #F0FFFF">
+<body >
 
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -35,10 +35,57 @@
 <![endif]-->
 <!-- Add your site or application content here-->
 <div id="home" class="section">
+    <div class="row" style="text-align: center;">
+        <nav class="navbar navbar-default navbar-customized container-fluid">
+            <div class="table">
+                <div class="row">
+                    <div class="cell navbar-header havbar-header-customized">
+                        <a class="navbar-brand" style="margin-left: 15px;"><img src="pictures/navbar/transparentLogo.gif" height="40px" /></a>
+                    </div>
+                    <div class="cell">
+                        <div class="input-group" style="margin-right: 100px; width: 400px;">
+                            <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" style=" margin-top: 20px" type="button">Go!</button>
+                                        </span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn btn-hover home-button" onclick="window.location.href='homePage.html'">
+                            Home
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn btn-hover home-button" onclick="window.location.href='index.html'">
+                            Log out
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+                            <li class="dropdown">
+                                <div class="btn btn-hover">
+                                    <a href="#" class="dropdown-toggle"
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <img src="pictures/navbar/userAvatar.png" height="25px" style="margin-right: 5px">
+                                        TestUser<span class="caret" style="margin-left: 5px"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">My Trips </a></li>
+                                        <li><a href="#">History of Trips</a></li>
+                                        <li><a href="#">Account Settings </a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav></div>
 
     <div id="sth" class="smallsection flexVerticalCellWrap">
         <div class="row">
-            <div class="span3 tableCell" style="margin-right: 690px; height: 80px; margin-top: 40px"><a class="navbar-brand" href="#"><img src="pictures/navbar/transparentLogo.gif"/> </a></div>
             <h2>Don't travel alone anymore!</h2>
             <div class="span3 tableCell"><img src="pictures/cartravel.png" height="85" width="130" style="margin-left: 350px"></div>
 
