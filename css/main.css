@@ -10,6 +10,14 @@
     background :purple;
 }
 
+.navbar-customized{
+    height: 70px;
+}
+
+.havbar-header-customized{
+    margin-right: 20%;
+}
+
 #uniqueJorney{
     display:none
 }
@@ -152,7 +160,16 @@ h6 {
 }
 
 
-/* buttons */
+/* more buttons */
+
+.home-button{
+    height: 40px;
+    margin-bottom: 28px;
+}
+
+.btn-hover:hover{
+    background-color: #E5E4E2;
+}
 
 .viewTripsButton {
     background-color: lightpink;
