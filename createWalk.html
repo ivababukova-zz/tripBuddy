@@ -28,35 +28,131 @@
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body style="background:rgb(240, 248, 255)">
-<div id="navbar">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="pictures/navbar/transparentLogo.gif"/> </a>
-            </div>
+<div id="sth" class="smallsection flexVerticalCellWrap" >
+    <div class="row">
+        <nav class="navbar navbar-default navbar-customized container-fluid">
+            <div class="table">
+                <div class="row">
+                    <div class="cell navbar-header havbar-header-customized">
+                        <a class="navbar-brand" style="margin-left: 15px;"><img src="pictures/navbar/transparentLogo.gif" height="40px" /></a>
+                    </div>
+                    <div class="cell">
+                        <div class="input-group" style="margin-right: 130px; width: 400px;">
+                            <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" style=" margin-top: 20px" type="button"><img src="pictures/search.png" height="15px" width="15px" /></button>
+                                        </span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn btn-hover home-button">
+                            <img src="pictures/newmessages.png" height="22px" width="22px"/>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn btn-hover home-button">
+                            <img src="pictures/bell.png" height="22px" width="22px"/>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn btn-hover home-button" onclick="window.location.href='homePage.html'">
+                            Home
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn btn-hover home-button" onclick="window.location.href='index.html'">
+                            Log out
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <ul class="nav navbar-nav navbar-right" style="margin-right: 5px;">
+                            <li class="dropdown">
+                                <div class="btn btn-hover">
+                                    <a href="#" class="dropdown-toggle"
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <img src="pictures/navbar/userAvatar.png" height="25px" style="margin-right: 5px">
+                                        TestUser<span class="caret" style="margin-left: 5px"></span></a>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="pictures/navbar/userAvatar.png" >TestUser<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">My Trips </a></li>
-                        <li><a href="#">History of Trips</a></li>
-                        <li><a href="#">Account Settings </a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="index.html">Log Out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">My Trips </a></li>
+                                        <li><a href="#">History of Trips</a></li>
+                                        <li><a href="#">Account Settings </a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav></div>
 </div>
+<div id="createWalkTripPage" class="row" >
+
+    <div class="col-sm-5" style=" margin-left: 150px;height:550px"><form role="form">
+        <form role="form" >
+            <div class="form-group" style=" margin-top:25px">
+                <label for="usr">From : </label>
+                <input type="text" class="form-control sound " id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">To: </label>
+                <input type="password" class="form-control sound" id="pwd">
+            </div>
+            <div class="btn-group" data-toggle="buttons" >
+                <label id ="uniqueTrip" class="btn btn-default"><input type="radio"  value="1" /> Unique Trip</label>
+                <label id ="weeklyTrip" class="btn btn-default" ><input type="radio" value="2" /> Weekly Trip</label>
+            </div>
+        </form>
+        <div  id="dateAndTime" class ="form-group" style = "margin-top: 25px; display:none">
+            <label for="usr">Date: </label>
+            <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" style="margin-top: 10px;display: inline-block">
+                <input size="16" type="text" value="12-02-2012" readonly>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-default  dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:50px;margin-right:50px;display: inline-block">
+                    <span id="timeDropDown" style="width: 50px" >Time</span> <span class="caret"></span>
+                </button>
+                <ul id="timeOptions" class="dropdown-menu scrollable-menu">
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div id="weekDays">
+            <label for="usr">Days: </label>
+            <form role="form">
+                <label class="checkbox-inline"><input type="checkbox" value="">Monday</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Tuesday</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Wednesday</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Thursday</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Friday</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Saturday</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Sunday</label>
+            </form>
+        </div>
+        <div class="form-group" style="margin-top:10px">
+            <label for="pwd">Additional Information </label>
+            <input type="password" class="form-control sound" id="aditionalInfo">
+        </div>
+    </div>
+
+
+    <div class="col-sm-5" style=" height:550px;">
+        <div id="googleMap" style="width:500px;height:380px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+"></div>
+        <div class="btn-group" data-toggle="buttons" style="margin-top: 50px; margin-right:100px; float:right">
+            <button id="createCar2Trip" class="button btn btn-default btn-lg">Submit trip </button></p>
+            </label>
+
+        </div>
 
 
 </body>
