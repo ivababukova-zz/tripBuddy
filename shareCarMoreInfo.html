@@ -83,42 +83,49 @@
                     </div>
                 </div>
             </nav></div>
-        </div>
-        <h5>More info about this trip:</h5>
-        <div class="table currentTripsTable" style="width: 600px; height: 380px;">
-            <div class="centeredRow">
-                <div class="cell biggerGrayTableCell">
-                    <h6 style="text-align: left; font-size: 14px"><b>From:</b> 276 Paisley road</h6>
-                    <h6 style="text-align: left; font-size: 14px"><b>To:</b> University of Glasgow Library</h6>
-                    <h6 style="text-align: left; font-size: 14px"><b>Car Model:</b> Nissan X-Trail</h6>
-                    <h6 style="text-align: left; font-size: 14px"><b>Price:</b> £4</h6>
-                </div>
-                <h2><button id="bookButton" type="button" class="btn btn-lg walkButton" onclick="window.location.href='bookingSuccessful.html'">
-                    Book
-                </button></h2>
-                <!--
-                <div class="cell biggerGrayTableCell">
-                    <h6 style="text-align: left; font-size: 14px"><b>Picture of the car:</b></h6>
-                    <img src="pictures/xtrail.png" height="120" width="160">
-                </div> -->
-            </div>
-            <div class="centeredRow">
-                <div class="cell biggerGrayTableCell">
-                    <img src="pictures/map.jpg" style="width: 150px; height: 120px;">
-                    <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='https://www.google.co.uk/maps/dir/55.8520878,-4.2923082/University+of+Glasgow+Library,+Hillhead+Street,+Glasgow+G12+8QE,+United+Kingdom/@55.8618537,-4.3056879,14z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x488845cd076f5eeb:0x8fc9a4ad62b880f0!2m2!1d-4.2890699!2d55.8734218!3e0'">
-                        more info
-                    </button>
-                </div>
-                <div class="cell biggerGrayTableCell">
-                    <h6 style="text-align: left; font-size: 14px"><b>Days:</b> Monday - Friday</h6>
-                    <h6 style="text-align: left; font-size: 14px"><b>Time:</b> 9-10 am</h6>
-                    <h6 style="text-align: left; font-size: 14px"><b>Seats left:</b> 2</h6>
-                    <h6 style="text-align: left; font-size: 14px"><b>Trip duration:</b> 15 min</h6>
-                    <button type="button" class="btn btn-lg alltripsSmallButton">user info</button>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
+
+
+    <div class="container">
+        <div  class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
+            <div class="col-xs-6" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:400px;height:300px" >
+                <center> <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="205" width="205"><br>
+                    <b>SHARE A CAR </b><br>
+                    <b> From : 276 Paisley road</b><br>
+                    <b> To : University of Glasgow </b><center>
+
+            </div>
+            <div class="col-xs-6" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:400px;height:300px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d17912.952413308576!2d-4.30573081645098!3d55.860600835728974!2m3
+                !1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x4888467afa91df6d%3A0xe954c1343333d779!2s276+Paisley+Rd+W%2C+Glasgow%2C+Glasgow+
+                City+G51+1BJ!3m2!1d55.852204!2d-4.292272!4m5!1s0x488845d20af469b3%3A0xa3f0620b655e4983!2sUniversity+of+Glasgow%2C+Glasgow!3m2!1d55.872121
+                099999994!2d-4.288200499999999!5e0!3m2!1sen!2suk!4v1448372729837" width="375" height="275"  frameborder="0" style="border:0;margin-top:10px" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+
+
+        <div   class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 10px; ">
+            <div class="col-xs-6" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:400px;height:100px;margin-bottom: 275px;" >
+                <h6 style="text-align: left; font-size: 14px"><b>Days:</b> Monday - Friday</h6>
+                <h6 style="text-align: left; font-size: 14px"><b>Time:</b> 9-10 am</h6>
+                <h6 style="text-align: left; font-size: 14px"><b>Seats left:</b> 2</h6>
+                <h6 style="text-align: left; font-size: 14px"><b>Trip duration:</b> 15 min</h6>
+
+            </div>
+            <div class="col-xs-6" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:400px;height:100px; margin-bottom: 275px;">
+                <div style="display:flex;justify-content:center;align-items:center;" class="btn-group" data-toggle="buttons" >
+                    <button type="button"  class= "button btn btn-lg btn-primary btn-block createButton "
+                            style = "margin-top: 25px" value="0" onclick="window.location.href='bookingSuccessful.html'">More info!</button>
+
+
+           </div>
+            </div>
+
+        </div>
+
+
+        
 </body>
 </html>
