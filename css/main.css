@@ -48,9 +48,7 @@ body {
     height: 100px;
 }
 
-.grayTableCell:hover{
-    background-color: #F5F5F5;
-}
+
 
 .biggerGrayTableCell{
     background-color: #EBEBEB;
@@ -59,9 +57,7 @@ body {
     margin: 0 auto;
 }
 
-.biggerGrayTableCell:hover{
-    background-color: #F5F5F5;
-}
+
 
 .cell{
     display: table-cell;
@@ -154,10 +150,6 @@ h6 {
     margin-top: 15px;
 }
 
-.createButton:hover{
-    background-color: #307D7E;
-}
-
 #weekDays{
     display:none;
     margin-top: 25px;
@@ -190,9 +182,7 @@ h6 {
     background-color: lightpink;
 }
 
-.pinkButton:hover{
-    background-color: lightcoral;
-}
+
 
 .carButton {
     background-color: #ADDFFF;
@@ -201,9 +191,7 @@ h6 {
     margin-top: 15px;
 }
 
-.carButton:hover{
-    background-color: #307D7E;
-}
+
 
 .taxiButton {
     background-color: cadetblue;
@@ -212,20 +200,17 @@ h6 {
     margin-top: 15px;
 }
 
-.taxiButton:hover{
-    background-color: #151B54;
-}
+
 
 .walkButton {
-    background-color: lightgreen;
+    background-color: lightgreen ;
+
     width: 130px;
     height: 45px;
     margin-top: 15px;
 }
 
-.walkButton:hover{
-    background-color: #347235;
-}
+
 
 .alltripsButton {
     background-color: #f5e79e;
@@ -235,9 +220,7 @@ h6 {
     margin-bottom: 15px;
 }
 
-.alltripsButton:hover{
-    background-color: lightcoral;
-}
+
 
 .alltripsSmallButton {
     background-color: #FFF550;
@@ -249,9 +232,6 @@ h6 {
     padding: 5px;
 }
 
-.alltripsSmallButton:hover{
-    background-color: #FFAF0A;
-}
 
 .dropdownButton{
     margin-left: 200px;
