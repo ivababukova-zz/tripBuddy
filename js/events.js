@@ -32,9 +32,5 @@ $(document).ready(function(){
         pickDate: false
     });
 
-    $(".sound").keypress(function() {
-        var sound = new Audio("sounds/button2.mp3");
-        sound.currentTime = 0;
-        sound.play();
-    });
+    
 });

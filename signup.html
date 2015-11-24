@@ -20,11 +20,14 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script type="text/javascript">
-        function displayForm() {
-            console.log("jababab");
+        function soundPlay() {
+            var sound = new Audio("sounds/button2.mp3");
+            sound.currentTime = 0;
+            sound.play();
         }
 
     </script>
+
 </head>
 
 <html class="no-js" lang="">
@@ -50,10 +53,14 @@
                     <div class="card card-container">
                         <form class="form-signin">
                             <span id="reauth-email" class="reauth-email"></span>
-                            <input type="text" id="inputName" class="form-control sound " placeholder="Your name" required autofocus>
-                            <input type="email" id="inputEmail" class="form-control sound " style="margin-top: 15px;" placeholder="Email address" required autofocus>
-                            <input type="password" id="inputPassword" class="form-control sound" style="margin-top: 15px;" placeholder="Password" required autofocus>
-                            <input type="password" id="inputPassword2" class="form-control sound" style="margin-top: 15px;" placeholder="Repeat password" required autofocus>
+                            <input type="text" id="inputName" class="form-control sound " placeholder="Your name" required autofocus onkeypress="soundPlay()"
+                            >
+                            <input type="email" id="inputEmail" class="form-control sound " style="margin-top: 15px;" placeholder="Email address" required autofocus onkeypress="soundPlay()"
+                            >
+                            <input type="password" id="inputPassword" class="form-control sound" style="margin-top: 15px;" placeholder="Password" required autofocus onkeypress="soundPlay()"
+                            >
+                            <input type="password" id="inputPassword2" class="form-control sound" style="margin-top: 15px;" placeholder="Repeat password" required autofocus onkeypress="soundPlay()"
+                            >
                             <div id="remember" class="checkbox">
                                 <label>
                                     <input type="checkbox" value="remember-me"> Remember me

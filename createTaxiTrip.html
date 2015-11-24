@@ -26,6 +26,16 @@
 
     <link rel="stylesheet" href="css/main.css">
     <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+
+    <script type="text/javascript">
+        function soundPlay() {
+            var sound = new Audio("sounds/button2.mp3");
+            sound.currentTime = 0;
+            sound.play();
+        }
+
+    </script>
 </head>
 <body>
 
@@ -39,7 +49,7 @@
                     </div>
                     <div class="cell">
                         <div class="input-group" style="margin-right: 130px; width: 400px;">
-                            <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for...">
+                            <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for..." onkeypress="soundPlay()">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default" style=" margin-top: 20px" type="button"><img src="pictures/search.png" height="15px" width="15px" /></button>
                                         </span>
@@ -96,11 +106,11 @@
 
             <div class="form-group" style=" margin-top:25px">
                 <label for="usr">From : </label>
-                <input type="text" class="form-control sound " id="usr">
+                <input type="text" class="form-control sound " id="usr" onkeypress="soundPlay()">
             </div>
             <div class="form-group">
                 <label for="pwd">To: </label>
-                <input type="password" class="form-control sound" id="pwd">
+                <input  class="form-control sound" id="pwd" onkeypress="soundPlay()">
             </div>
             <div class="btn-group" data-toggle="buttons" >
                 <label id ="uniqueTrip" class="btn btn-default"><input type="radio"  value="1" /> Unique Trip</label>
@@ -140,11 +150,11 @@
         </div>
         <div class="form-group" style=" margin-top:10px">
             <label for="usr"> Taxi Company </label>
-            <input type="text" class="form-control sound " id="carModel">
+            <input type="text" class="form-control sound " id="carModel" onkeypress="soundPlay()">
         </div>
         <div class="form-group">
             <label for="pwd">Additional Information </label>
-            <input type="password" class="form-control sound" id="aditionalInfo">
+            <input  class="form-control sound" id="aditionalInfo" onkeypress="soundPlay()">
         </div>
     </div>
 
