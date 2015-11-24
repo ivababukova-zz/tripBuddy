@@ -98,142 +98,115 @@
             </nav></div>
 
 
-            <h5>Current Trips in your area:</h5>
-            <div class="table" style="text-align: center">
-                <div class="row" style=" margin-top: 20px">
-                        <div class="btn-group" data-toggle="buttons">
-                            <label id ="carTrips" class="btn btn-default"><input type="radio"  value="1" />car</label>
-                            <label id ="taxiTrips" class="btn btn-default" ><input type="radio" value="2" />taxi</label>
-                            <label id ="walkTrips" class="btn btn-default" ><input type="radio" value="2" />walk</label>
-                            <label id ="allTrips" class="btn btn-default" ><input type="radio" value="2" />all trips</label>
-                            <div id = "change-area" class="btn pinkButton" style="margin-left: 20px">change area</div>
-                        </div>
-                </div>
-                <div class="row">
-                    <div class="currentTripsTable" style="display: block;">
-                        <div id="cars" class="row">
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Share car, Glasgow Uni, £4</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='shareCarMoreInfo.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Trip to Hyndlands, £18</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='shareCarMoreInfo.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Share car, Glasgow Uni, £5</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='shareCarMoreInfo.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Share car, 108 Argyle Street, £4</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='shareCarMoreInfo.html'">
-                                    more info
-                                </button>
-                            </div>
-                        </div>
-                        <div id="taxis" class="row">
-                            <div class="grayTableCell cell taxiTrips">
-                                <h6>Taxi tomorrow, GCU, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell taxiTrips">
-                                <h6>Taxi tomorrow, Startclyde Uni, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell taxiTrips">
-                                <h6>Taxi tomorrow, GCU, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                        </div>
-                        <div id="walks" class="row">
-                            <div class="grayTableCell cell walkTrips">
-                                <h6>Walk to work, Waterloo street</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell walkTrips">
-                                <h6>Walk to work, Sauchihall street</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell walkTrips">
-                                <h6>Walk to work, Waterloo street</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                        </div>
-                        <div id="row4" class="row">
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Share car, Glasgow Uni, £4</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell taxiTrips">
-                                <h6>Taxi tomorrow, GCU, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell carTrips">
-                                <h6>Trip to Hyndlands, £18</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell walkTrips">
-                                <h6>Walk to work, Waterloo street</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                        </div>
-                        <div id="row5" class="row">
-                            <div class="grayTableCell cell carTrips" id="car2">
-                                <h6>Share car, Glasgow Uni, £4</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell taxiTrips" id="taxi2">
-                                <h6>Taxi tomorrow, GCU, £8</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell carTrips" id="car3">
-                                <h6>Trip to Hyndlands, £18</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                            <div class="grayTableCell cell walkTrips" id="walk2">
-                                <h6>Walk to work, Waterloo street</h6>
-                                <button type="button" class="btn btn-lg alltripsSmallButton" onclick="window.location.href='currentTrips.html'">
-                                    more info
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div style="display:flex;justify-content:center;align-items:center;" class="btn-group" data-toggle="buttons" >
+            <label id ="carTripsButton" class="btn btn-default   btn-lg"><input type="radio"  value="1" /> Car Trips</label>
+            <label id ="taxiTripsButton" class="btn btn-default   btn-lg" ><input type="radio" value="2" /> Taxi Trips</label>
+            <label id ="walkTripsButton" class="btn btn-default  btn-lg"><input type="radio"  value="1" /> Walk Trips</label>
+            <label id ="allTripButton" class="btn btn-default  btn-lg" ><input type="radio" value="2" /> All Trips</label>
         </div>
     </div>
-</div>
+
+    <div class="container">
+        <div  id="carTrips" class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
+            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px" >
+                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A CAR </b><br>
+                <b> From : 276 Paisley road</b><br>
+                <b> To : University of Glasgow </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
+                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A CAR </b><br>
+                <b> From : Edinburgh</b><br>
+                <b> To : Aberfoyle </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
+                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A CAR </b><br>
+                <b> From : 200 Dumbarton Road</b><br>
+                <b> To : Buchannan Bus Station </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px;">
+                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>LOOKING FOR A CAR </b><br>
+                <b> From : Glasgow</b><br>
+                <b> To : Loch Lomond</b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+        </div>
+
+
+
+        <div  id="TaxiTrips" class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
+            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px" >
+                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A TAXI </b><br>
+                <b> From : Glasgow City Centre</b><br>
+                <b> To : Maryhill Road </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
+                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A TAXI </b><br>
+                <b> From : Paisley Road</b><br>
+                <b> To : Byres Road </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
+                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A TAXI </b><br>
+                <b> From : St.Vincent Street</b><br>
+                <b> To : Dumbarton Road</b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px;">
+                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>SHARE A TAXI </b><br>
+                <b> From : 5 Monart Place</b><br>
+                <b> To : Glasgow Airport </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+        </div>
+
+
+
+        <div  id="walkTrips" class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
+            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px" >
+                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>WALK TRIP </b><br>
+                <b> From : Kelvingrove Park</b><br>
+                <b> To : Glasgow Green </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
+                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>WALK TRIP </b><br>
+                <b> From : University of Glasgow</b><br>
+                <b> To : Merchant City</b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
+                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b>WALK TRIP</b><br>
+                <b> From : St. Enoch</b><br>
+                <b> To : Firhill Stadium </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px;">
+                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+                <b> WALK TRIP </b><br>
+                <b> From : Paisley Road </b><br>
+                <b> To : Waterloo Street </b>
+                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+            </div>
+        </div>
+
+
+
+    </div>
 </body>
 </html>

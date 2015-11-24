@@ -4,44 +4,30 @@
 
 
 $(document).ready(function(){
-  console.log("hiiiiiii!");
-  $("#cars").hide();
-  $("#taxis").hide();
-  $("#walks").hide();
-  $("#row4").hide();
-  $("#row5").hide();
+  $("#carTripsButton").click(function(){
 
-  $("#carTrips").click(function(){
-      $("#row4").hide();
-      $("#row5").hide();
-      $("#taxis").hide();
-      $("#walks").hide();
-      $("#cars").show();
+    $("#TaxiTrips").hide();
+    $("#walkTrips").hide();
+    $("#carTrips").show();
 
   });
 
-  $("#taxiTrips").click(function(){
-    $("#row4").hide();
-    $("#row5").hide();
-    $("#cars").hide();
-    $("#walks").hide();
-    $("#taxis").show();
+  $("#taxiTripsButton").click(function(){
+    $("#TaxiTrips").show();
+    $("#walkTrips").hide();
+    $("#carTrips").hide();
   });
 
-  $("#walkTrips").click(function(){
-    $("#row4").hide();
-    $("#row5").hide();
-    $("#cars").hide();
-    $("#taxis").hide();
-    $("#walks").show();
+  $("#walkTripsButton").click(function(){
+    $("#TaxiTrips").hide();
+    $("#walkTrips").show();
+    $("#carTrips").hide();
   });
 
-  $("#allTrips").click(function(){
-    $("#cars").show();
-    $("#taxis").show();
-    $("#walks").show();
-    $("#row4").show();
-    $("#row5").show();
+  $("#allTripButton").click(function(){
+    $("#TaxiTrips").show();
+    $("#walkTrips").show();
+    $("#carTrips").show();
   });
 
 });
