@@ -223,13 +223,16 @@ h6 {
 .alltripsSmallButton {
     background-color: #FFF550;
     width: 70px;
-    height: 20px;
+    height: 40px;
     margin: 15px;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     padding: 5px;
 }
 
+.alltripsButton:hover{
+    background-color: #FFA500;
+}
 
 .dropdownButton{
     margin-left: 200px;
@@ -265,3 +268,21 @@ h6 {
     overflow-x: hidden;
 }
 
+.currentTripsCell{
+    background: #CFEFFA;
+    border-radius: 25px;
+    align-items:center;
+    margin-left: 50px;
+    width:250px;
+    height:250px
+}
+
+.picture{
+    margin-left: 50px;
+    margin-right:50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position:relative;
+    height: 90px;
+    width: 125px;
+}

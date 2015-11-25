@@ -92,8 +92,8 @@
                                             TestUser<span class="caret" style="margin-left: 5px"></span></a>
 
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">My Trips </a></li>
-                                        <li><a href="#">History of Trips</a></li>
+                                        <li><a href="#">Current Trips </a></li>
+                                        <li><a href="#">Previous Trips</a></li>
                                         <li><a href="#">Account Settings </a></li>
                                         <li role="separator" class="divider"></li>
                                     </ul>
@@ -106,7 +106,7 @@
             </nav></div>
 
 
-        <div style="display:flex;justify-content:center;align-items:center;" class="btn-group" data-toggle="buttons" >
+        <div style="display:flex;justify-content:center;align-items:center; margin-top: 30px" class="btn-group" data-toggle="buttons" >
             <label id ="carTripsButton" class="btn btn-default   btn-lg"><input type="radio"  value="1" onclick='soundPlay()'/> Car Trips</label>
             <label id ="taxiTripsButton" class="btn btn-default   btn-lg" ><input type="radio" value="2" /> Taxi Trips</label>
             <label id ="walkTripsButton" class="btn btn-default  btn-lg"><input type="radio"  value="1" /> Walk Trips</label>
@@ -116,100 +116,100 @@
 
     <div class="container">
         <div  id="carTrips" class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
-            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px" >
-                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/cartravel.png" class="picture">
                 <b>SHARE A CAR </b><br>
                 <b> From : 276 Paisley road</b><br>
                 <b> To : University of Glasgow </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
 
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
-                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/cartravel.png" class="picture">
                 <b>SHARE A CAR </b><br>
                 <b> From : Edinburgh</b><br>
                 <b> To : Aberfoyle </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
-                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/cartravel.png" class="picture">
                 <b>SHARE A CAR </b><br>
                 <b> From : 200 Dumbarton Road</b><br>
                 <b> To : Buchannan Bus Station </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px;">
-                <img src="pictures/cartravel.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/cartravel.png" class="picture">
                 <b>LOOKING FOR A CAR </b><br>
                 <b> From : Glasgow</b><br>
                 <b> To : Loch Lomond</b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
         </div>
 
 
 
         <div  id="TaxiTrips" class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
-            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px" >
-                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/taxi.png" class="picture">
                 <b>SHARE A TAXI </b><br>
                 <b> From : Glasgow City Centre</b><br>
                 <b> To : Maryhill Road </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
-                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/taxi.png" class="picture">
                 <b>SHARE A TAXI </b><br>
                 <b> From : Paisley Road</b><br>
                 <b> To : Byres Road </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
-                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/taxi.png" class="picture">
                 <b>SHARE A TAXI </b><br>
                 <b> From : St.Vincent Street</b><br>
                 <b> To : Dumbarton Road</b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px;">
-                <img src="pictures/taxi.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/taxi.png" class="picture">
                 <b>SHARE A TAXI </b><br>
                 <b> From : 5 Monart Place</b><br>
                 <b> To : Glasgow Airport </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
         </div>
 
 
 
         <div  id="walkTrips" class="row" style="display:flex;justify-content:center;align-items:center; margin-top: 50px">
-            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px" >
-                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/boys_walking.png" class="picture">
                 <b>WALK TRIP </b><br>
                 <b> From : Kelvingrove Park</b><br>
                 <b> To : Glasgow Green </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
-                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/boys_walking.png" class="picture">
                 <b>WALK TRIP </b><br>
                 <b> From : University of Glasgow</b><br>
                 <b> To : Merchant City</b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA; border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px">
-                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/boys_walking.png" class="picture">
                 <b>WALK TRIP</b><br>
                 <b> From : St. Enoch</b><br>
                 <b> To : Firhill Stadium </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
-            <div class="col-xs-3" style="background: #CFEFFA;border-radius: 25px; align-items:center;margin-left: 50px; width:250px;height:250px;">
-                <img src="pictures/boys_walking.png" style="  margin-left: 50px;margin-right:50px;position:relative" height="125" width="125">
+            <div class="col-xs-3 currentTripsCell">
+                <img src="pictures/boys_walking.png" class="picture">
                 <b> WALK TRIP </b><br>
                 <b> From : Paisley Road </b><br>
                 <b> To : Waterloo Street </b>
-                <button type="button" style="margin-left:150px;margin-top:10px;" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button>
+                <h2><button class="btn btn-primary" type="button" value="0" onclick="window.location.href='shareCarMoreInfo.html'">More info!</button></h2>
             </div>
         </div>
 
