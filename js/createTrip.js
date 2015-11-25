@@ -49,7 +49,7 @@ var createTime=function(e){
     var timeArrayLength = times.length;
     var htmlString = "";
     for( var i=0; i< timeArrayLength; i++){
-       htmlString = htmlString.concat(" <li><a href=\"#\">",times[i],"</a></li>")
+       htmlString = htmlString.concat(" <li><a onclick='document.getElementById(\"timeDropDown\").innerHTML=\"" + times[i] + "\";'>",times[i],"</a></li>")
     }
     timeDropDown.innerHTML = htmlString;
 };
