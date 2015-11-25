@@ -27,7 +27,12 @@
             sound.currentTime = 0;
             sound.play();
         }
-
+       function playCar(){
+           console.log("Ima here");
+           var sound = new Audio("sounds/car.wav");
+           sound.currentTime=0;
+           sound.play();
+       }
     </script>
 </head>
 <body>
@@ -102,7 +107,7 @@
 
 
         <div style="display:flex;justify-content:center;align-items:center;" class="btn-group" data-toggle="buttons" >
-            <label id ="carTripsButton" class="btn btn-default   btn-lg"><input type="radio"  value="1" /> Car Trips</label>
+            <label id ="carTripsButton" class="btn btn-default   btn-lg"><input type="radio"  value="1" onclick='soundPlay()'/> Car Trips</label>
             <label id ="taxiTripsButton" class="btn btn-default   btn-lg" ><input type="radio" value="2" /> Taxi Trips</label>
             <label id ="walkTripsButton" class="btn btn-default  btn-lg"><input type="radio"  value="1" /> Walk Trips</label>
             <label id ="allTripButton" class="btn btn-default  btn-lg" ><input type="radio" value="2" /> All Trips</label>
