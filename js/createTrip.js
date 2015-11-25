@@ -59,7 +59,7 @@ var addFreeSeats = function(e){
     if(seatDropDown != undefined) {
         var htmlString = "";
         for (var j = 1; j < 6; j++) {
-            htmlString = htmlString.concat(" <li><a href=\"#\">", j, "</a></li>");
+            htmlString = htmlString.concat(" <li><a onclick='document.getElementById(\"seats\").innerHTML=\"" + j + " seat(s)\";'>",j,"</a></li>");
         }
         seatDropDown.innerHTML = htmlString;
     }
