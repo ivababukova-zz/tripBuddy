@@ -41,22 +41,20 @@
             var to = document.getElementById("destination");
             console.log(to.value);
             console.log(from.value)
-            if(from.value.length == 0 || to.value.length==0){
+            if (from.value.length == 0 || to.value.length == 0) {
+                document.getElementById("leftPane").style.marginTop ="50px";
+                document.getElementById("rightPane").style.marginTop="50px";
                 var error = document.getElementById("initalErrorBar");
-                error.style.display="inline";
-                error.innerHTML="You have not specified locations!" ;
+                to.style.border = "solid red";
+                from.style.border = "solid red";
+                error.style.display = "inline";
 
+                error.innerHTML = "<b>ERROR</b> : You have not specified locations!";
+
+            } else {
+                return window.location.href = "currentTrips.html"
             }
-            else return window.location.href = "currentTrips.html"
-            //var submit = document.getElementById("signInButton");
-            //if(email.value.length==0) {
-            //    document.getElementById("initialErrorBar").innerHTML = "You have to enter you email before continuing!";
-            //    submit.href = "";
-           // }else {
-             //   submit href = "homePage.html";
 
-
-//            }
         }
     </script>
 </head>
@@ -127,7 +125,6 @@
     <div class="row">
 
        <center> <div id="initalErrorBar" class="hide-item alert alert-danger" style="width: 400px;display:none;" role="alert">
-
             <span class="sr-only">Error:</span>
 
             <p></p>
@@ -135,14 +132,14 @@
     </div>
 
 
-    <div class="col-sm-5" style=" margin-left: 150px;height:550px"><form role="form">
+    <div id="leftPane" class="col-sm-5" style=" margin-left: 150px;height:550px"><form role="form">
         <form role="form" >
             <div class="form-group" style=" margin-top:25px">
-                <label for="usr">From : </label>
+                <label for="usr">From * : </label>
                 <input type="text" class="form-control sound " id="origin" onkeypress="soundPlay()">
             </div>
             <div class="form-group">
-                <label for="pwd">To: </label>
+                <label for="pwd">To * : </label>
                 <input class="form-control sound" id="destination" onkeypress="soundPlay()">
             </div>
             <div class="btn-group" data-toggle="buttons" >
@@ -187,7 +184,7 @@
     </div>
 
 
-    <div class="col-sm-5" style=" height:550px;">
+    <div  id ="rightPane" class="col-sm-5" style=" height:550px;">
         <div id="googleMap" style="width:500px;height:380px;
     margin: 0 auto;
     padding: 10px;

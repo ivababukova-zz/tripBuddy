@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TripBuddy - Create Car Trip </title>
+    <title>Create Car Trip </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
@@ -24,7 +24,6 @@
     <script src = "js/bootstrap-datetimepicker.min.js"></script>
     <!-- <script src = "events.js"></script>-->
     <script src = "js/createTrip.js"></script>
-
     <script type="text/javascript">
         function soundPlay() {
             var sound = new Audio("sounds/button2.mp3");
@@ -32,6 +31,27 @@
             sound.play();
         }
 
+        function check(){
+
+            var from = document.getElementById("origin");
+            var to = document.getElementById("destination");
+            console.log(to.value);
+            console.log(from.value)
+            if (from.value.length == 0 || to.value.length == 0) {
+                document.getElementById("leftPane").style.marginTop ="20px";
+                document.getElementById("rightPane").style.marginTop="50px";
+                var error = document.getElementById("initalErrorBar");
+                to.style.border = "solid red";
+                from.style.border = "solid red";
+                error.style.display = "inline";
+
+                error.innerHTML = "<b>ERROR</b> : You have not specified locations!";
+
+            } else {
+                return window.location.href = "currentTrips.html"
+            }
+
+        }
     </script>
 
     <link rel="stylesheet" href="css/main.css">
@@ -46,7 +66,7 @@
                 </div>
                 <div class="cell">
                     <div class="input-group" style="margin-right: 130px; width: 400px;">
-                        <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for..." onkeypress="soundPlay()">
+                        <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for...">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default" style=" margin-top: 20px" type="button"><img src="pictures/search.png" height="15px" width="15px" /></button>
                                         </span>
@@ -96,8 +116,16 @@
         </div>
     </nav></div>
     <div id="createCarTripPage" class="row" >
+        <div class="row">
 
-        <div class="col-sm-5" style=" margin-left: 150px;height:550px"><form role="form">
+            <center> <div id="initalErrorBar" class="hide-item alert alert-danger" style="width: 400px;display:none;" role="alert">
+                <span class="sr-only">Error:</span>
+
+                <p></p>
+            </div></center>
+        </div>
+
+        <div id ="leftPane" class="col-sm-5" style=" margin-left: 150px;height:550px"><form role="form">
             <form role="form" >
                 <div class="btn-group" data-toggle="buttons" style="margin-top: 25px">
                     <label class="btn btn-default">
@@ -110,11 +138,11 @@
 
                 <div class="form-group" style=" margin-top:25px">
                     <label for="usr">From : </label>
-                    <input type="text" class="form-control sound " id="usr" onkeypress="soundPlay()">
+                    <input type="text" class="form-control sound " id="origin" onkeypress="soundPlay()">
                 </div>
                 <div class="form-group">
                     <label for="pwd">To: </label>
-                    <input class="form-control sound" id="pwd"onkeypress="soundPlay()">
+                    <input type="password" class="form-control sound" id="destination" onkeypress="soundPlay()">
                 </div>
                 <div class="btn-group" data-toggle="buttons" >
                     <label id ="uniqueTrip" class="btn btn-default"><input type="radio"  value="1" /> Unique Trip</label>
@@ -161,23 +189,19 @@
             </div>
             <div class="form-group" style=" margin-top:10px">
                 <label for="usr"> Car Model </label>
-                <input type="text" class="form-control sound " id="carModel" onkeypress="soundPlay()">
+                <input type="text" class="form-control sound " id="carModel">
             </div>
             <div class="form-group">
                 <label for="pwd">Additional Information </label>
-                <input  class="form-control sound" id="aditionalInfo" onkeypress="soundPlay()">
+                <input type="password" class="form-control sound" id="aditionalInfo">
             </div>
         </div>
 
 
-        <div class="col-sm-5" style=" height:550px;">
-            <div id="googleMap" style="width:500px;height:380px;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-"></div>
+        <div id="rightPane" class="col-sm-5" style=" height:550px;">
+            <div id="googleMap" style="width:500px;height:380px;margin: 0 auto;padding: 10px;position: relative;"></div>
             <div class="btn-group" data-toggle="buttons" style="margin-top: 50px; margin-right:100px; float:right">
-                <button id="createCar2Trip" class="button btn btn-default btn-lg">Submit trip </button></p>
+                <button id="createCar2Trip" class="button btn btn-default btn-lg" onclick="check()">Submit trip </button></p>
                 </label>
 
             </div>

@@ -3,7 +3,6 @@
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
-    <title>TripBuddy - Home </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
@@ -21,10 +20,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script type="text/javascript">
-        function soundPlay() {
-            var sound = new Audio("sounds/button2.mp3");
-            sound.currentTime = 0;
-            sound.play();
+        function displayForm() {
+            console.log("jababab");
         }
 
     </script>
@@ -48,7 +45,7 @@
                     </div>
                     <div class="cell">
                         <div class="input-group" style="margin-right: 130px; width: 400px;">
-                            <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for..." onkeypress="soundPlay()">
+                            <input type="text" class="form-control" style=" margin-top: 20px" placeholder="Search for...">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default" style=" margin-top: 20px" type="button"><img src="pictures/search.png" height="15px" width="15px" /></button>
                                         </span>
@@ -103,12 +100,12 @@
 
             <div id="startPage" class="row lightGrayTable" style="display: block; background-color: #788773">
                 <div class="span3 tableCell">
-                    <h2><button id="loginButton" type="button" class="btn btn-lg btn-primary createButton" style="margin-top: 35px" onclick="window.location.href='createTrip.html'">
+                    <h2><button id="loginButton" type="button" class="btn btn-lg createButton" style="margin-top: 35px" onclick="window.location.href='createTrip.html'">
                         Create new trip
                     </button></h2>
                 </div>
                 <div class="span3 tableCell" style="margin-bottom: 40px">
-                    <h2><button type="button" class="btn btn-lg btn-danger viewTripsButton" style="margin-top: 20px; margin-bottom: 30px" onclick="window.location.href='currentTrips.html'">
+                    <h2><button type="button" class="btn btn-lg viewTripsButton" style="margin-top: 20px; margin-bottom: 30px" onclick="window.location.href='currentTrips.html'">
                         View current trips
                     </button></h2>
                 </div>
